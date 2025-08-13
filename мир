@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элитные авто</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        /* Шапка */
+        header img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Заголовок раздела */
+        h2 {
+            text-align: center;
+            color: #f1c40f;
+            margin-top: 40px;
+        }
+
+        /* Каталог */
+        .catalog {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .car {
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        .car:hover {
+            transform: translateY(-5px);
+        }
+
+        .car img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 15px;
+        }
+
+        .car-info h3 {
+            margin: 0 0 10px;
+            color: #f1c40f;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* Контакты */
+        footer {
+            background: #000;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <img src="sharp.png.jpg" alt="Шапка сайта">
+    </header>
+
+    <!-- Каталог -->
+    <h2>Наши автомобили</h2>
+    <section class="catalog">
+        <div class="car">
+            <img src="car1go.jpg" alt="Lamborghini Aventador">
+            <div class="car-info">
+                <h3>Lamborghini Aventador</h3>
+                <p>V12, 770 л.с., 0-100 км/ч за 2.8 сек</p>
+                <div class="price">₽ 35 000 000</div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="car2go.jpg
+            " alt="Ferrari SF90">
+            <div class="car-info">
+                <h3>Ferrari SF90 Stradale</h3>
+                <p>V8 Hybrid, 1000 л.с., 0-100 км/ч за 2.5 сек</p>
+                <div class="price">₽ 38 000 000</div>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="car3go.jpg" alt="Porsche 911 Turbo S">
+            <div class="car-info">
+                <h3>Porsche 911 Turbo S</h3>
+                <p>3.8L Twin-Turbo, 650 л.с., 0-100 км/ч за 2.7 сек</p>
+                <div class="price">₽ 18 500 000</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <footer>
+        <p>Телефон: <a href="tel:+79991234567">+7 999 123-45-67</a></p>
+        <p>Email: <a href="mailto:elitecars@example.com">elitecars@example.com</a></p>
+        <p>Адрес: Москва, ул. Престижная, 1</p>
+    </footer>
+
+</body>
+</html>
